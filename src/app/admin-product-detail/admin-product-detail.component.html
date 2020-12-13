@@ -1,0 +1,58 @@
+
+    <div class="all">
+     
+   
+    <div class="mainDetail">
+      <div class="picTitle">
+        <div class="pictureImg">
+          <img src="{{product.image}}" class="detailImg">
+        </div>
+        <div class="nameTitle">
+          <div class="info">
+            <div class="info1"><h1 class="ntitle">{{product.name}}</h1></div>
+            <div class="info2"><h2>{{product.price}} tg</h2></div>
+            <div class="info3"><h3><span> Sizes: {{product.size}}</span></h3> </div>
+            <div class="info4"><h3><span>Colors: {{product.color}}</span></h3> </div>
+            <div>
+              <div><h2 class="descrip">Details</h2></div>
+              <div>
+                <p> {{product.description}}</p>
+              </div>
+            </div>
+          </div>
+          <button class="butBack" (click)="goBack()">Back</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="lineBetween"></div>
+    <div class="backButtons">
+      <div class="backButtonsDiv">
+      </div>
+    </div>
+    </div>
+    <div style="margin: auto; width: 80%;">
+      <label class="ntitle"> Name:
+        <input [(ngModel)]="product.name" placeholder = "description" #name>
+      </label>
+      <br>
+      <label class="ntitle"> Price:
+        <input [(ngModel)]="product.price" placeholder = "price" #price>
+      </label>
+      <br>
+      <label class="ntitle"> Description:
+        <input [(ngModel)]="product.description" placeholder = "description" #description>
+      </label>
+      <br>
+      <label class="ntitle"> Color:
+        <input [(ngModel)]="product.color" placeholder = "description" #color>
+      </label>
+      <br>
+      <button (click)="save(name.value,price.value,description.value,color.value)">Save</button>
+      <br>
+      <button (click)="deleteProduct(product)" class="delChange">Delete</button>
+    </div>
+    <div class="betweenCon1">
+
+    </div>
+  

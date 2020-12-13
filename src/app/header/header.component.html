@@ -1,0 +1,67 @@
+<!-- <div class="dropdwn">
+<nav >
+
+    <ul>
+      <img class="logo" src="\assets\logoShop1.png" title="logo" routerLink="/products">
+      <li><a href="#" routerLink="/products">Home</a></li>
+      <li><a href="" routerLink="/categories">Category <i class="fas fa-caret-down"></i> </a>
+        <ul>
+          <li><a href="#" routerLink="/categories/Men/products">Men</a></li>
+          <li><a href="#" routerLink="/categories/Women/products">Women</a></li>
+          <li><a href="#" routerLink="/categories/Kid/products">Kids</a></li>
+        </ul>
+      </li>
+      <li><a href="#" routerLink="/products">Sales </a></li>
+      <li><a href="#" routerLink="/about">About us </a></li>
+      <li><a href="#" routerLink="/contacts">Contact</a></li>
+      <li><a id="loginReg" routerLink='/login' (click)="checkLogin()">Login</a><span id="slash"> &#47; </span><a id="loginReg" routerLink="" (click)="logout()">Logout</a></li>
+      <li><a routerLink="/cart">Cart</a></li>
+      <li style="visibility: hidden;"><a routerLink="/admin-panel">Admin</a></li>
+    </ul>
+
+  </nav>
+  <div>
+
+  </div>
+</div> -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <img class="logo" src="\assets\logoShop1.png" title="logo" routerLink="/products"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" routerLink="/products">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" routerLink="/categories/Men/products">Men</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/categories/Women/products">Women</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" routerLink="/categories/Kid/products">Kids</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/about">Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/contacts">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" routerLink="/cart" >Card</a>
+        </li>
+        <li style="visibility: hidden;"><a routerLink="/admin-panel">Admin</a></li>
+      </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-outline-primary me-md-2" type="button" routerLink='/login' (click)="checkLogin()">Login</button>
+        <button class="btn btn-outline-primary me-md-2" type="button" routerLink="" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</nav>

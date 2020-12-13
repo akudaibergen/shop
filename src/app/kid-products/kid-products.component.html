@@ -1,0 +1,47 @@
+
+    <div class="all">
+      <div class="main">
+        <div id="main">
+          <div class="divrek">
+
+          </div>
+          <div class="divProduct">
+            <div  *ngFor="let product of productions" class="allPr">
+              <div class="productDetail">
+                <a style="text-decoration: none;" routerLink="/categories/Kid/products/{{product.id}}"  (click)="onSelect(product)">
+                  <div class="boxIm"><img src="{{product.image}}" class="prodIm"></div>
+                  <div class="details">
+                  <h4 id="title">
+                    {{product.name}}
+                  </h4>
+                  <p class="descriptionPrd">
+                    {{product.description}}
+                  </p>
+                  <p>
+                    {{product.price}}
+                  </p>
+                  </div>
+                </a>
+                <button style="align-content: center;" (click)="addToCard(product)" class="butAdd">Add to Card</button>
+              </div>
+          </div>
+          </div>
+
+
+          <div class="posleProduct"></div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="backButtons">
+      <div class="backButtonsDiv">
+        <div>
+          <button class="butBack" (click)="goBack()">Back</button>
+        </div>
+      </div>
+    </div>
+    <div class="betweenCon1">
+
+    </div>
+  

@@ -1,0 +1,113 @@
+/* .dropdwn{
+  padding: 0;
+  margin: 0 ;
+  width: 100%;
+  height: 80px;
+  position:fixed;
+  top:0;
+}
+.logo{
+	width: 150px;
+  height: 65px;
+  margin-left: 10%;
+  margin-top: 0.5%;
+  margin-right: 12%;
+}
+
+nav{
+  height: 80px;
+  background:#fff;
+  vertical-align: baseline;
+  border-top:3px solid #2c3e50;
+  border-bottom: 1px solid #e0e0e0;   
+  display: inline-flexbox;    
+  
+}
+nav ul{
+  
+  display: inline-flexbox;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav ul li{
+  margin-top: 2.4%;
+  background: #fff;
+  position: relative;
+  list-style: none;
+  display:block;
+  padding: 0 10px;
+  margin-right: 18px;
+}
+#slash{
+  font-weight: bold;
+}
+nav ul li a{
+  display:inline-block;
+  color:#2c3e50;
+  text-decoration: none;
+  line-height: 35px;
+  font-size: 20px;
+  transition: .5s;
+}
+nav ul li a:hover{
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+nav ul ul{
+  background-color: #fff;
+  position: absolute;
+  line-height: 20px;
+  display: none;
+}
+nav ul li:hover > ul{
+  display: block;
+}
+
+nav ul ul li{
+  width: 150px;
+  float: none;
+  display: list-item;
+  position: relative;
+  line-height: 20px !important;
+  padding-top: 10px;
+}
+
+#loginReg{
+ margin-right: 0px;
+}
+@media screen and (min-width: 768px){
+  
+  nav ul{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  nav li{
+    flex: 1 1 1;
+    
+  }    
+}
+@media screen and (max-width:1200px){
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+} */
+.navbar-light{
+  background-color: #fff8dc;
+}
+.logo{
+	width: 150px;
+  height: 65px;
+  margin-left: 10%;
+  margin-top: 0.5%;
+  margin-right: 12%;
+}
+a{
+  margin-left:2% ;
+  color:#2c3e50;
+  line-height: 35px;
+  font-size: 20px;
+  transition: .5s;
+}

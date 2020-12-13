@@ -1,0 +1,40 @@
+<div class="all">
+     <!-- <div class="header"> <app-header></app-header></div>
+     <div class="betweenCon">  
+    </div> -->
+    <div class="card">
+        <mat-card>
+            <div class="headerH2">
+                <h2>Login</h2>
+            </div>
+            <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+                <div class="email-input">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input formControlName="email" matInput required id="username" [(ngModel)]="username" />
+                        <mat-error *ngIf="loginForm.get('email').errors?.required">
+                            Required Username
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <span class="aLink">Forget Password?</span>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input formControlName="password" matInput type="password" required id="password" [(ngModel)]="password"/>
+                    <mat-error *ngIf="loginForm.get('password').errors?.required">
+                        Required Password
+                    </mat-error>
+                    </mat-form-field>
+                </div>
+                <button mat-flat-button color="primary" class="btn" type="submit" (click)="login()">Login</button>
+                <br>
+                <button mat-flat-button color="primary" class="btn" type="submit" routerLink="/registration">Registration</button>
+            </form>
+        </mat-card>
+    </div>
+</div>
+<div class="betweenCon1">
+
+</div>
+

@@ -1,0 +1,126 @@
+.all{
+
+  display: inline-block;
+}
+.header{
+  width: 100%;
+  display: block;
+}
+.choices{
+  display: block;
+  margin-top: 120px;
+}
+#main{
+  position: static;
+  width:100%;
+  display: inline-flex;
+  height: auto;
+
+}
+.divrek{
+  width:20%;
+  height: 300px;
+  margin: 10px;
+}
+.posleProduct{
+  height: auto;
+  width: 10%;
+  margin: 10px;
+}
+
+
+.divProduct
+{
+  display: inline-flexbox;
+  width: 70%;
+  height: auto;
+}
+.allPr{
+  width:auto;
+  display: inline-block;
+  height: auto;
+  margin: 10px;
+}
+.allPr{
+}
+.productDetail{
+  width:250px;
+  height: auto;
+  display: inline-flexbox;
+}
+.boxIm{
+  text-align: center;
+}
+.prodIm{
+  width: 210px;
+  height: 190px;
+}
+.details{
+  text-align: center;
+  width: 250px;
+}
+.descriptionPrd{
+  display: none;
+}
+#title{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width: 250px;
+  height: auto;
+  margin: 0px;
+
+}
+p{
+  margin: 0px;
+}
+.allPr{
+  margin: 10px;
+}
+.productDetail:hover a div img{
+  width: 220px;
+  height: 205px;
+  transition: 0.3s;
+}
+.productDetail:hover .details #title{
+  overflow:visible;
+  width: 250px;
+  height: auto;
+  white-space:normal;
+  transition: 0.3s;
+}
+.delChange{
+  margin-top:40px;
+    margin-left: 10%;
+    width: 80%;
+    background-color: #90daf5;
+    /* background-color: #4a82ea; */
+    color: #fff;
+    border: none;
+    box-sizing: border-box;
+    display: block;
+    height: 55px;
+    line-height: 55px;
+    min-width: 180px;
+    padding: 0 12px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Gotham SSm A","Gotham SSm B",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 700;
+    letter-spacing: .3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-appearance: button;
+    border-radius: 4px;
+}
+
+
+/* .prodIm:hover{
+  width: 230px;
+  height: 205px;
+}
+.prodIm:hover #title{
+
+
+} */

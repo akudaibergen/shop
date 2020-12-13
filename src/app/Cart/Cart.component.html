@@ -1,0 +1,65 @@
+<!-- <app-header></app-header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div *ngFor='let item of items'>
+  Item:
+  <p>
+    {{item.name}}
+  </p>
+</div>
+<button (click)="clearCart()">Clear</button>
+<button (click)="buyItems()">Buy</button>
+<app-footer></app-footer> -->
+
+    <div class="all">
+    <div class="main">
+      <div id="main">
+        <div class="divrek">
+
+        </div>
+        <div class="divProduct">
+          <div  *ngFor="let item of items" class="allPr">
+            <div class="productDetail">
+              <a style="text-decoration: none;">
+                <div class="boxIm"><img src="{{item.image}}" class="prodIm"></div>
+                <div class="details">
+                <h4 id="title">
+                  {{item.name}}
+                </h4>
+                <p class="descriptionPrd">
+                  {{item.description}}
+                </p>
+                <p>
+                  {{item.price}}
+                </p>
+                </div>
+              </a>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="posleProduct"></div>
+      </div>
+
+    </div>
+    <div class="divButtons">
+      <div class = "buttons">
+        <button (click)="clearCart()">Clear</button>
+        <button (click)="buyItems()">Buy</button>
+        <button (click)="goBack()">Back</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="betweenCon1">
+
+  </div>
+
+  

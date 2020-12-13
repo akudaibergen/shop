@@ -1,0 +1,57 @@
+
+<div class="all">
+    
+    <div class="box">
+        <mat-card>
+            <div class="headerH2">
+                <h2>Registration</h2>
+            </div>
+            <form (ngSubmit)="onRegister()" name="registrationForm" [formGroup]="registrationForm">
+                <div class="username-input">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input formControlName="userName" matInput required id="username" [(ngModel)]="register.username" />
+                        <mat-error *ngIf="registrationForm.get('userName').errors?.required" >
+                            Required Username
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input formControlName="password" matInput type="password" required id="password" [(ngModel)]="register.password"/>
+                    <mat-error *ngIf="registrationForm.get('password').errors?.required">
+                        Required Password
+                    </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input formControlName="passwordConfirm" matInput type="password" required id="password" [(ngModel)]="confirmPassword" />
+                    <mat-error *ngIf="registrationForm.get('passwordConfirm').errors?.required">
+                        Required Password
+                    </mat-error>
+                    <mat-error *ngIf="registrationForm.get('passwordConfirm').errors.confirmedValidator">
+                        Not match password
+                    </mat-error>
+                    </mat-form-field>
+                </div>
+                <button mat-flat-button  color="primary" class="btn" type="submit" (click)="registerUser()">Register</button>
+            </form>
+        </mat-card>
+        <!-- <form class="box" action="registration.component.html" >
+            <h1>join us</h1>
+            <input type="text" placeholder="Username"  [(ngModel)]="register.username" name="username">
+            <input type="password" placeholder="Password"  [(ngModel)]="register.password" name="password">
+            <input type="password" placeholder="Confirm password"  [(ngModel)]="confirmPassword" [ngModelOptions]="{standalone:
+                true}">
+            <input class = "btn" type="submit" (click)="registerUser()" value="SIGN UP">
+        </form> -->
+    </div>
+    
+</div>
+<div class="betweenCon1">
+
+</div>
+
+
+

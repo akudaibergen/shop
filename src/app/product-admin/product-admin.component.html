@@ -1,0 +1,42 @@
+
+    <div class="all">
+    
+      <div class="choices">
+        <!-- <a routerLink="/add-element">Add element</a> -->
+      </div>
+      <div class="main">
+        <div id="main">
+          <div class="divrek">
+          </div>
+          <div class="divProduct">
+            <div  *ngFor="let product of products" class="allPr">
+              <div class="productDetail">
+                <a style="text-decoration: none;" routerLink="/admin-product-detail/{{product.id}}" (click)="onSelect(product)">
+                  <div class="boxIm"><img src="{{product.image}}" class="prodIm"></div>
+                  <div class="details">
+                  <h4 id="title">
+                    {{product.name}}
+                  </h4>
+                  <p class="descriptionPrd">
+                    {{product.description}}
+                  </p>
+                  <p>
+                    {{product.price}}
+                  </p>
+                  </div>
+                </a>
+              </div>
+          </div>
+          </div>
+
+
+          <div class="posleProduct"></div>
+        </div>
+
+      </div>
+      <div class="betweenCon1">
+
+      </div>
+      
+    </div>
+   
